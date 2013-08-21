@@ -52,7 +52,7 @@ if(!String.prototype.format) {
          *
          * http://localhost/component/bootstrap-calendar/tmpls/
          */
-        tmpl_path: 'tmpls/',
+        tmpl_path: '/static/tmpls/',
         classes: {
             months: {
                 inmonth: 'cal-day-inmonth',
