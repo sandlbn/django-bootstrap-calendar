@@ -3,7 +3,7 @@ __author__ = 'sandlbn'
 
 from django.db import models
 from django.utils.translation import ugettext as _
-from time import mktime
+from utils import datetime_to_timestamp
 
 
 class CalendarEvent(models.Model):
@@ -25,17 +25,19 @@ class CalendarEvent(models.Model):
     start = models.DateTimeField(verbose_name=_('Start Date'))
     end = models.DateTimeField(verbose_name=_('End Date'), blank=True)
 
+    @property
     def start_timestamp(self):
-        return '{0}'.format(long(mktime(self.start.timetuple())))
+        """
+        Return end date as timestamp
+        """
+        return datetime_to_timestamp(self.start)
 
+    @property
     def end_timestamp(self):
         """
         Return end date as timestamp
         """
-        if self.end:
-            return '{0}'.format(long(mktime(self.end.timetuple())))
-        else:
-            return ''
+        return datetime_to_timestamp(self.end)
 
     def __unicode__(self):
         return self.title
