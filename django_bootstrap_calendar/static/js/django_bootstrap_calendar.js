@@ -32,7 +32,7 @@
 		}
 	};
 
-	var	 calendar = $('#calendar').calendar(options);
+	var	calendar = $('#calendar').calendar(options);
 
 	$('.btn-group button[data-calendar-nav]').each(function() {
 		var $this = $(this);
@@ -48,13 +48,4 @@
 		});
 	});
 
-    $('#first_day').change(function(){
-        calendar.setOptions({first_day: $(this).val()});
-        calendar.view();
-    });
-
-    $('#language').change(function(){
-        calendar.setLanguage($(this).val());
-        calendar.view();
-    });
 }(jQuery));
