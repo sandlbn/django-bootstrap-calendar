@@ -1,4 +1,6 @@
-{% load staticfiles i18n %}<!DOCTYPE html>
+{% load staticfiles i18n %}
+{% load bootstrap_calendar %}
+<!DOCTYPE html>
 <html lang="en" ng-app>
   <head>
     <meta charset="utf-8">
@@ -20,10 +22,9 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
 
     <!-- Your stuff: Third-party css libraries go here -->
+    {% bootstrap_calendar_css %}
 
     <!-- This file store project specific CSS -->
-    <link href="{% static 'css/calendar.css' %}" rel="stylesheet">
-    <link href="{% static 'css/django_bootstrap_calendar.css' %}" rel="stylesheet">
     {% endblock %}
 
     {% block angular %}
@@ -64,8 +65,7 @@
 
       <!-- place project specific Javascript in this file -->
       <script src="{% static 'js/underscore-min.js' %}"></script>
-      <script src="{% static 'js/calendar.js' %}"></script>
-      <script src="{% static 'js/django_bootstrap_calendar.js' %}"></script>
+      {% bootstrap_calendar_js %} 
     {% endblock javascript %}
   </body>
 </html>
