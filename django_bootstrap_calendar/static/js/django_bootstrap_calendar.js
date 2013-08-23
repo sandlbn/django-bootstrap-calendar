@@ -11,19 +11,6 @@
 			if(!events) {
 				return;
 			}
-			var list = $('#eventlist');
-			list.html('');
-
-			$.each(events, function(key, val) {
-				$(document.createElement('li'))
-					.html('<a href="' + val.url + '">' + val.title + '</a>')
-					.appendTo(list);
-			});
-		},
-		onAfterViewLoad: function(view) {
-			$('.page-header h3').text(this.getTitle());
-			$('.btn-group button').removeClass('active');
-			$('button[data-calendar-view="' + view + '"]').addClass('active');
 		},
 		classes: {
 			months: {
