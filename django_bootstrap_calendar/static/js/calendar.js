@@ -81,10 +81,10 @@ if(!String.prototype.format) {
                 enable: 1
             },
             week: {
-                enable: 1
+                enable: 0
             },
             day: {
-                enable: 1
+                enable: 0
             }
         },
 

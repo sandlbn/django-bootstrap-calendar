@@ -197,21 +197,18 @@
 }
 .events-list {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
+  top: 40px;
 }
 .event {
+    font-size: 10px;
+    text-align: center;
+    border-radius: 1px;
+    color: white;
+    font-weight: bold;
+    text-overflow: hidden;
   display: block;
   background-color: #c3c3c3;
-  width: 12px;
-  height: 12px;
-  margin-right: 2px;
-  margin-bottom: 2px;
-  -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-  border-radius: 8px;
-  border: 1px solid #ffffff;
+  width: 150px;
 }
 .cal-event-list .event.pull-left {
   margin-top: 3px;
@@ -376,12 +373,12 @@ span[data-cal-date]:hover {
 #cal-slide-content {
   padding: 20px;
   color: #ffffff;
-  background-image: url("../img/dark_wood.png");
+  background-image: url("/static/img/dark_wood.png");
   -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
 }
 #cal-slide-tick {
-  background-image: url("../img/tick.png?2");
+  background-image: url("/static/img/tick.png");
 }
 #cal-slide-content:hover {
   background-color: transparent;
