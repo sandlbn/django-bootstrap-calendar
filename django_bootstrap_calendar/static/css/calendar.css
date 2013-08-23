@@ -206,9 +206,13 @@
     color: white;
     font-weight: bold;
     text-overflow: hidden;
-  display: block;
-  background-color: #c3c3c3;
-  width: 150px;
+    display: block;
+    background-color: #c6c3c3;
+    width: 150px;
+    padding: 2px;
+}
+a:hover {
+    text-decoration: none;
 }
 .cal-event-list .event.pull-left {
   margin-top: 3px;

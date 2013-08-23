@@ -376,6 +376,10 @@ if(!String.prototype.format) {
 
         $.each(this.options.events, function(k, event) {
             if((parseInt(event.start) < end) && (parseInt(event.end) > start)) {
+                var d = new Date();
+                var start_date  = new Date(parseInt(event.start) + d.getTimezoneOffset() * 60000);
+                event.start_date = (start_date.getHours() < 10 ? '0' + start_date.getHours() : start_date.getHours())
+            +':'+(start_date.getMinutes() < 10 ? '0' + start_date.getMinutes() : start_date.getMinutes())
                 events.push(event);
             }
         });
