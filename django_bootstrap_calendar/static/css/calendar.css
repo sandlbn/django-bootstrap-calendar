@@ -198,6 +198,7 @@
 .events-list {
   position: absolute;
   top: 40px;
+  padding-left: 0px;
 }
 .event {
     font-size: 10px;
@@ -208,7 +209,7 @@
     text-overflow: hidden;
     display: block;
     background-color: #c6c3c3;
-    width: 150px;
+    width: 100%;
     padding: 2px;
 }
 a:hover {
@@ -391,10 +392,6 @@ span[data-cal-date]:hover {
   color: #ffffff;
   font-weight: normal;
   line-height: 22px;
-}
-.events-list {
-  max-height: 47px;
-  padding-left: 5px;
 }
 .cal-column {
   border-left: 1px solid #e1e1e1;
