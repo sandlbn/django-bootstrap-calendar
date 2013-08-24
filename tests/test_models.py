@@ -12,8 +12,6 @@ import os
 import unittest
 from datetime import datetime
 from django.conf import settings
-from django_bootstrap_calendar.utils import datetime_to_timestamp
-from django_bootstrap_calendar.utils import timestamp_to_datetime
 
 
 DATABASES = {
@@ -31,6 +29,8 @@ settings.configure(
 )
 
 from django_bootstrap_calendar.serializers import event_serializer
+from django_bootstrap_calendar.utils import datetime_to_timestamp
+from django_bootstrap_calendar.utils import timestamp_to_datetime
 
 
 class TestDjango_bootstrap_calendar(unittest.TestCase):
