@@ -2,6 +2,7 @@
 __author__ = 'sandlbn'
 
 from django.utils import simplejson
+from django.db.models.query import QuerySet
 
 
 def event_serializer(events):
@@ -10,16 +11,18 @@ def event_serializer(events):
     """
     objects_body = []
 
-    for event in events:
-        field = {
-            "id": event.pk,
-            "title": event.title,
-            "url": event.url,
-            "class": event.css_class,
-            "start": event.start_timestamp,
-            "end": event.end_timestamp
-        }
-        objects_body.append(field)
+    if isinstance(events, QuerySet):
+        for event in events:
+            field = {
+                "id": event.pk,
+                "title": event.title,
+                "url": event.url,
+                "class": event.css_class,
+                "start": event.start_timestamp,
+                "end": event.end_timestamp
+            }
+            objects_body.append(field)
+
     objects_head = {"success": 1}
     objects_head["result"] = objects_body
     return simplejson.dumps(objects_head, encoding='utf-8')
