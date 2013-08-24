@@ -11,9 +11,11 @@ def timestamp_to_datetime(timestamp):
     with json fix
     """
     if isinstance(timestamp, (str, unicode)):
+
         if len(timestamp) == 13:
-            timestamp = timestamp[:10]
-        return datetime.fromtimestamp(float(timestamp))
+            timestamp = int(timestamp) / 1000
+
+        return datetime.fromtimestamp(timestamp)
     else:
         return ""
 
@@ -24,7 +26,10 @@ def datetime_to_timestamp(date):
     with json fix
     """
     if isinstance(date, datetime):
+
         timestamp = mktime(date.timetuple())
-        return '{0}000'.format(long(timestamp))
+        json_timestamp = int(timestamp) * 1000
+
+        return '{0}'.format(json_timestamp)
     else:
         return ""

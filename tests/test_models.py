@@ -13,6 +13,7 @@ import shutil
 import unittest
 
 from django_bootstrap_calendar import models
+from django_bootstrap_calendar.utils import to_json
 
 
 class TestDjango_bootstrap_calendar(unittest.TestCase):
