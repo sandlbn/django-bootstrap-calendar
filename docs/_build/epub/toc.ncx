@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:uid" content="unknown"/>
+    <meta name="dtb:depth" content="3"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>django-bootstrap-calendar 0.1.0 documentation</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint1" playOrder="1">
+      <navLabel>
+        <text>Welcome to django-bootstrap-calendar&#39;s documentation!</text>
+      </navLabel>
+      <content src="index.html" />
+    </navPoint>
+    <navPoint id="navPoint2" playOrder="2">
+      <navLabel>
+        <text>django-bootstrap-calendar</text>
+      </navLabel>
+      <content src="readme.html" />
+      <navPoint id="navPoint2" playOrder="2">
+        <navLabel>
+          <text>django-bootstrap-calendar</text>
+        </navLabel>
+        <content src="readme.html" />
+      </navPoint>
+      <navPoint id="navPoint3" playOrder="3">
+        <navLabel>
+          <text>Requirements</text>
+        </navLabel>
+        <content src="readme.html#requirements" />
+      </navPoint>
+      <navPoint id="navPoint4" playOrder="4">
+        <navLabel>
+          <text>Instalation</text>
+        </navLabel>
+        <content src="readme.html#instalation" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint5" playOrder="5">
+      <navLabel>
+        <text>Installation</text>
+      </navLabel>
+      <content src="installation.html" />
+    </navPoint>
+    <navPoint id="navPoint6" playOrder="6">
+      <navLabel>
+        <text>Usage</text>
+      </navLabel>
+      <content src="usage.html" />
+    </navPoint>
+    <navPoint id="navPoint7" playOrder="7">
+      <navLabel>
+        <text>Contributing</text>
+      </navLabel>
+      <content src="contributing.html" />
+      <navPoint id="navPoint7" playOrder="7">
+        <navLabel>
+          <text>Contributing</text>
+        </navLabel>
+        <content src="contributing.html" />
+      </navPoint>
+      <navPoint id="navPoint8" playOrder="8">
+        <navLabel>
+          <text>Types of Contributions</text>
+        </navLabel>
+        <content src="contributing.html#types-of-contributions" />
+        <navPoint id="navPoint8" playOrder="8">
+          <navLabel>
+            <text>Types of Contributions</text>
+          </navLabel>
+          <content src="contributing.html#types-of-contributions" />
+        </navPoint>
+        <navPoint id="navPoint9" playOrder="9">
+          <navLabel>
+            <text>Report Bugs</text>
+          </navLabel>
+          <content src="contributing.html#report-bugs" />
+        </navPoint>
+        <navPoint id="navPoint10" playOrder="10">
+          <navLabel>
+            <text>Fix Bugs</text>
+          </navLabel>
+          <content src="contributing.html#fix-bugs" />
+        </navPoint>
+        <navPoint id="navPoint11" playOrder="11">
+          <navLabel>
+            <text>Implement Features</text>
+          </navLabel>
+          <content src="contributing.html#implement-features" />
+        </navPoint>
+        <navPoint id="navPoint12" playOrder="12">
+          <navLabel>
+            <text>Write Documentation</text>
+          </navLabel>
+          <content src="contributing.html#write-documentation" />
+        </navPoint>
+        <navPoint id="navPoint13" playOrder="13">
+          <navLabel>
+            <text>Submit Feedback</text>
+          </navLabel>
+          <content src="contributing.html#submit-feedback" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint14" playOrder="14">
+        <navLabel>
+          <text>Get Started!</text>
+        </navLabel>
+        <content src="contributing.html#get-started" />
+      </navPoint>
+      <navPoint id="navPoint15" playOrder="15">
+        <navLabel>
+          <text>Pull Request Guidelines</text>
+        </navLabel>
+        <content src="contributing.html#pull-request-guidelines" />
+      </navPoint>
+      <navPoint id="navPoint16" playOrder="16">
+        <navLabel>
+          <text>Tips</text>
+        </navLabel>
+        <content src="contributing.html#tips" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint17" playOrder="17">
+      <navLabel>
+        <text>Credits</text>
+      </navLabel>
+      <content src="authors.html" />
+      <navPoint id="navPoint17" playOrder="17">
+        <navLabel>
+          <text>Credits</text>
+        </navLabel>
+        <content src="authors.html" />
+      </navPoint>
+      <navPoint id="navPoint18" playOrder="18">
+        <navLabel>
+          <text>Development Lead</text>
+        </navLabel>
+        <content src="authors.html#development-lead" />
+      </navPoint>
+      <navPoint id="navPoint19" playOrder="19">
+        <navLabel>
+          <text>Contributors</text>
+        </navLabel>
+        <content src="authors.html#contributors" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint20" playOrder="20">
+      <navLabel>
+        <text>History</text>
+      </navLabel>
+      <content src="history.html" />
+      <navPoint id="navPoint20" playOrder="20">
+        <navLabel>
+          <text>History</text>
+        </navLabel>
+        <content src="history.html" />
+      </navPoint>
+      <navPoint id="navPoint21" playOrder="21">
+        <navLabel>
+          <text>0.1.0 (2013-08-15)</text>
+        </navLabel>
+        <content src="history.html#id1" />
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

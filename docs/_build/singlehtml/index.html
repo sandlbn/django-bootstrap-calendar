@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>django-bootstrap-calendar 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="None" href="index.html#document-index" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="index.html#document-index">django-bootstrap-calendar 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="welcome-to-django-bootstrap-calendar-s-documentation">
+<h1>Welcome to django-bootstrap-calendar&#8217;s documentation!<a class="headerlink" href="#welcome-to-django-bootstrap-calendar-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<span id="document-readme"></span><div class="section" id="django-bootstrap-calendar">
+<h2>django-bootstrap-calendar<a class="headerlink" href="#django-bootstrap-calendar" title="Permalink to this headline">¶</a></h2>
+<p>simple calendar based on the bootstrap calendar from <a class="reference external" href="http://bootstrap-calendar.azurewebsites.net/">http://bootstrap-calendar.azurewebsites.net/</a></p>
+<div class="section" id="requirements">
+<h3>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Python 2.6, 2.7</li>
+<li>Django (1.4.3+)</li>
+</ul>
+</div>
+<div class="section" id="instalation">
+<h3>Instalation<a class="headerlink" href="#instalation" title="Permalink to this headline">¶</a></h3>
+<p>Django:</p>
+<p>settings.py:</p>
+<div class="highlight-python"><pre>INSTALLED_APPS = (
+...
+'django_bootstrap_calendar',
+...
+)</pre>
+</div>
+<p>urls.py:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">urlpatterns</span> <span class="o">=</span> <span class="n">patterns</span><span class="p">(</span><span class="s">&#39;&#39;</span><span class="p">,</span>
+<span class="o">...</span>
+<span class="p">(</span><span class="s">r&#39;^calendar/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s">&#39;django_bootstrap_calendar.urls&#39;</span><span class="p">)),</span>
+<span class="o">...</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>Load templatetags:</p>
+<div class="highlight-python"><pre>{% load bootstrap_calendar %}</pre>
+</div>
+<p>In your template file:</p>
+<div class="highlight-python"><pre>Calendar controls :
+
+{% bootstrap_controls 'optional-css-classes' %}
+
+Calendar:
+
+{% bootstrap_calendar 'optional-css-classes' %}</pre>
+</div>
+<p>In your base.html file css section:</p>
+<div class="highlight-python"><pre>{% bootstrap_calendar_css %}</pre>
+</div>
+<p>In your base.html file javascript section:</p>
+<div class="highlight-python"><pre>{% bootstrap_calendar_js %}</pre>
+</div>
+</div>
+</div>
+<span id="document-installation"></span><div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>At the command line:</p>
+<div class="highlight-python"><pre>$ git clone https://github.com/sandlbn/django-bootstrap-calendar.git
+$ cd django-bootstrap-calendar
+$ python setup.py install</pre>
+</div>
+<p>Django:</p>
+<p>settings.py:</p>
+<div class="highlight-python"><pre>INSTALLED_APPS = (
+...
+'django_bootstrap_calendar',
+...
+)</pre>
+</div>
+<p>urls.py:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">urlpatterns</span> <span class="o">=</span> <span class="n">patterns</span><span class="p">(</span><span class="s">&#39;&#39;</span><span class="p">,</span>
+<span class="o">...</span>
+<span class="p">(</span><span class="s">r&#39;^calendar/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s">&#39;django_bootstrap_calendar.urls&#39;</span><span class="p">)),</span>
+<span class="o">...</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>Load templatetags:</p>
+<div class="highlight-python"><pre>{% load bootstrap_calendar %}</pre>
+</div>
+<p>In your template file:</p>
+<div class="highlight-python"><pre>Calendar controls :
+
+{% bootstrap_controls 'optional-css-classes' %}
+
+Calendar:
+
+{% bootstrap_calendar 'optional-css-classes' %}</pre>
+</div>
+<p>In your base.html file css section:</p>
+<div class="highlight-python"><pre>{% bootstrap_calendar_css %}</pre>
+</div>
+<p>In your base.html file javascript section:</p>
+<div class="highlight-python"><pre>{% bootstrap_calendar_js %}</pre>
+</div>
+</div>
+<span id="document-usage"></span><div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>To use django-bootstrap-calendar in a project:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">django_bootstrap_calendar</span>
+</pre></div>
+</div>
+</div>
+<span id="document-contributing"></span><div class="section" id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h2>
+<p>Contributions are welcome, and they are greatly appreciated! Every
+little bit helps, and credit will always be given.</p>
+<p>You can contribute in many ways:</p>
+<div class="section" id="types-of-contributions">
+<h3>Types of Contributions<a class="headerlink" href="#types-of-contributions" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="report-bugs">
+<h4>Report Bugs<a class="headerlink" href="#report-bugs" title="Permalink to this headline">¶</a></h4>
+<p>Report bugs at <a class="reference external" href="https://github.com/sandlbn/django_bootstrap_calendar/issues">https://github.com/sandlbn/django_bootstrap_calendar/issues</a>.</p>
+<p>If you are reporting a bug, please include:</p>
+<ul class="simple">
+<li>Your operating system name and version.</li>
+<li>Any details about your local setup that might be helpful in troubleshooting.</li>
+<li>Detailed steps to reproduce the bug.</li>
+</ul>
+</div>
+<div class="section" id="fix-bugs">
+<h4>Fix Bugs<a class="headerlink" href="#fix-bugs" title="Permalink to this headline">¶</a></h4>
+<p>Look through the GitHub issues for bugs. Anything tagged with &#8220;bug&#8221;
+is open to whoever wants to implement it.</p>
+</div>
+<div class="section" id="implement-features">
+<h4>Implement Features<a class="headerlink" href="#implement-features" title="Permalink to this headline">¶</a></h4>
+<p>Look through the GitHub issues for features. Anything tagged with &#8220;feature&#8221;
+is open to whoever wants to implement it.</p>
+</div>
+<div class="section" id="write-documentation">
+<h4>Write Documentation<a class="headerlink" href="#write-documentation" title="Permalink to this headline">¶</a></h4>
+<p>django-bootstrap-calendar could always use more documentation, whether as part of the
+official django-bootstrap-calendar docs, in docstrings, or even on the web in blog posts,
+articles, and such.</p>
+</div>
+<div class="section" id="submit-feedback">
+<h4>Submit Feedback<a class="headerlink" href="#submit-feedback" title="Permalink to this headline">¶</a></h4>
+<p>The best way to send feedback is to file an issue at <a class="reference external" href="https://github.com/sandlbn/django_bootstrap_calendar/issues">https://github.com/sandlbn/django_bootstrap_calendar/issues</a>.</p>
+<p>If you are proposing a feature:</p>
+<ul class="simple">
+<li>Explain in detail how it would work.</li>
+<li>Keep the scope as narrow as possible, to make it easier to implement.</li>
+<li>Remember that this is a volunteer-driven project, and that contributions
+are welcome :)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="get-started">
+<h3>Get Started!<a class="headerlink" href="#get-started" title="Permalink to this headline">¶</a></h3>
+<p>Ready to contribute? Here&#8217;s how to set up <cite>django_bootstrap_calendar</cite> for local development.</p>
+<ol class="arabic">
+<li><p class="first">Fork the <cite>django_bootstrap_calendar</cite> repo on GitHub.</p>
+</li>
+<li><p class="first">Clone your fork locally:</p>
+<div class="highlight-python"><pre>$ git clone git@github.com:your_name_here/django_bootstrap_calendar.git</pre>
+</div>
+</li>
+<li><p class="first">Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development:</p>
+<div class="highlight-python"><pre>$ mkvirtualenv django_bootstrap_calendar
+$ cd django_bootstrap_calendar/
+$ python setup.py develop</pre>
+</div>
+</li>
+<li><p class="first">Create a branch for local development:</p>
+<div class="highlight-python"><pre>$ git checkout -b name-of-your-bugfix-or-feature</pre>
+</div>
+</li>
+</ol>
+<p>Now you can make your changes locally.</p>
+<p>5. When you&#8217;re done making changes, check that your changes pass flake8 and the
+tests, including testing other Python versions with tox:</p>
+<div class="highlight-python"><pre>$ flake8 django_bootstrap_calendar tests
+    $ python setup.py test
+$ tox</pre>
+</div>
+<p>To get flake8 and tox, just pip install them into your virtualenv.</p>
+<ol class="arabic" start="6">
+<li><p class="first">Commit your changes and push your branch to GitHub:</p>
+<div class="highlight-python"><pre>$ git add .
+$ git commit -m "Your detailed description of your changes."
+$ git push origin name-of-your-bugfix-or-feature</pre>
+</div>
+</li>
+<li><p class="first">Submit a pull request through the GitHub website.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="pull-request-guidelines">
+<h3>Pull Request Guidelines<a class="headerlink" href="#pull-request-guidelines" title="Permalink to this headline">¶</a></h3>
+<p>Before you submit a pull request, check that it meets these guidelines:</p>
+<ol class="arabic simple">
+<li>The pull request should include tests.</li>
+<li>If the pull request adds functionality, the docs should be updated. Put
+your new functionality into a function with a docstring, and add the
+feature to the list in README.rst.</li>
+<li>The pull request should work for Python 2.6, 2.7, and 3.3, and for PyPy. Check
+<a class="reference external" href="https://travis-ci.org/sandlbn/django_bootstrap_calendar/pull_requests">https://travis-ci.org/sandlbn/django_bootstrap_calendar/pull_requests</a>
+and make sure that the tests pass for all supported Python versions.</li>
+</ol>
+</div>
+<div class="section" id="tips">
+<h3>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">¶</a></h3>
+<p>To run a subset of tests:</p>
+<div class="highlight-python"><pre>$ python -m unittest tests.test_django_bootstrap_calendar</pre>
+</div>
+</div>
+</div>
+<span id="document-authors"></span><div class="section" id="credits">
+<h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="development-lead">
+<h3>Development Lead<a class="headerlink" href="#development-lead" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Marcin Spoczynski &lt;<a class="reference external" href="mailto:marcin&#37;&#52;&#48;spoczynski&#46;com">marcin<span>&#64;</span>spoczynski<span>&#46;</span>com</a>&gt;</li>
+</ul>
+</div>
+<div class="section" id="contributors">
+<h3>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h3>
+<p>None yet. Why not be the first?</p>
+</div>
+</div>
+<span id="document-history"></span><div class="section" id="history">
+<h2>History<a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>0.1.0 (2013-08-15)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>First release on PyPI.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html#document-index">Table Of Contents</a></h3>
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-readme">django-bootstrap-calendar</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#instalation">Instalation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-usage">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-contributing">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#types-of-contributions">Types of Contributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#get-started">Get Started!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#pull-request-guidelines">Pull Request Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#tips">Tips</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-authors">Credits</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#development-lead">Development Lead</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#contributors">Contributors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-history">History</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#id1">0.1.0 (2013-08-15)</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="index.html#document-index">django-bootstrap-calendar 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Marcin Spoczynski.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
