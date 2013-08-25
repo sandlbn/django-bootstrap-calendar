@@ -1,10 +1,10 @@
 {% load i18n %}
 
-<div class="">
+<div class="row">
     <div class="btn-group {{ css_classes }}">
-        <button class="btn btn-primary" data-calendar-nav="prev"><<{% trans 'Prev' %}<</button>
+        <button class="btn btn-primary" data-calendar-nav="prev"> {% trans 'Prev' %} </button>
         <button class="btn" data-calendar-nav="today">Today </button>
-        <button class="btn btn-primary" data-calendar-nav="next">{% trans 'Next' %} >></button>
+        <button class="btn btn-primary" data-calendar-nav="next">{% trans 'Next' %}</button>
     </div>
     <div class="btn-group {{ css_classes }}">
         <button class="btn btn-warning" data-calendar-view="year">{% trans 'Year' %}</button>
