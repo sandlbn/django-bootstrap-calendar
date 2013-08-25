@@ -4,7 +4,7 @@ django-bootstrap-calendar
 
 simple calendar based on the bootstrap calendar from http://bootstrap-calendar.azurewebsites.net/
 
-.. image:: screenshot.png
+..image:: screenshot.png
     :align center
     :alt screenshot
 
