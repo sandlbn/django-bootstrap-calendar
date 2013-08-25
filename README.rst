@@ -4,12 +4,6 @@ django-bootstrap-calendar
 
 simple calendar based on the bootstrap calendar from http://bootstrap-calendar.azurewebsites.net/
 
-
-Documentation
--------------
-
-* TODO
-
 Requirements
 ------------
 
@@ -33,7 +27,7 @@ urls.py::
 
     urlpatterns = patterns('',
     ...
-    (r'^calendar/', include('django_bootrstap_calendar.urls')),
+    (r'^calendar/', include('django_bootstrap_calendar.urls')),
     ...
     )
 
@@ -60,7 +54,3 @@ In your base.html file javascript section::
     {% bootstrap_calendar_js %} 
 
 
-Features
---------
-
-* TODO

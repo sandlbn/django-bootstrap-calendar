@@ -22,7 +22,7 @@ urls.py::
 
     urlpatterns = patterns('',
     ...
-    (r'^calendar/', include('django_bootrstap_calendar.urls')),
+    (r'^calendar/', include('django_bootstrap_calendar.urls')),
     ...
     )
 
