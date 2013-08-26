@@ -2,6 +2,7 @@
 __author__ = 'sandlbn'
 
 from django import template
+from jsmin import jsmin
 from django.template.loader import render_to_string
 
 register = template.Library()
@@ -47,3 +48,27 @@ def bootstrap_calendar_css(*args):
     return render_to_string(
         'partial/calendar_css.html'
     )
+
+
+@register.simple_tag
+def bootstrap_calendar_init(*args, **kwargs):
+    """
+    """
+    options = {}
+
+    try:
+        options["events_url"] = kwargs["events_url"]
+    except KeyError:
+        options["events_url"] = '/calendar/json/'
+
+    try:
+        options["view"] = kwargs["view"]
+    except KeyError:
+        options["view"] = 'month'
+
+    try:
+        options["first_day"] = kwargs["first_day"]
+    except KeyError:
+        options["first_day"] = 1
+
+    return render_to_string('partial/calendar_init.html', options)
