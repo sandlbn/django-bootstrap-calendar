@@ -1,2 +1,5 @@
 {% load static %}
 <script src="{% static 'js/calendar.js' %}"></script>
+{% if language %}
+<script src="{% get_static_prefix %}js/language/{{ language }}.js"></script>
+{% endif %}

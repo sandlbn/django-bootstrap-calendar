@@ -11,6 +11,7 @@ Requirements
 
 - Python 2.6, 2.7
 - Django (1.4.3+)
+- jsmin (2.0.3+)
 
 Instalation
 ----------
@@ -53,6 +54,7 @@ In your base.html file css section::
 
 In your base.html file javascript section::
 
-    {% bootstrap_calendar_js %} 
+    {% bootstrap_calendar_js language="lang-code" %} 
+    {% bootstrap_calendar_init language="lang-code" %} 
 
 

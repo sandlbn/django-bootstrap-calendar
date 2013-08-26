@@ -2,8 +2,8 @@
 __author__ = 'sandlbn'
 
 from django import template
-from jsmin import jsmin
 from django.template.loader import render_to_string
+from django_bootstrap_calendar.utils import MinifyJs
 
 register = template.Library()
 
@@ -31,12 +31,21 @@ def bootstrap_controls(css_classes):
 
 
 @register.simple_tag
-def bootstrap_calendar_js(*args):
+def bootstrap_calendar_js(*args, **kwargs):
     """
     return a boostrap calendar tag java script files
     """
+
+    options = {}
+
+    try:
+        options["language"] = kwargs["language"]
+    except KeyError:
+        pass
+
     return render_to_string(
-        'partial/calendar_js.html'
+        'partial/calendar_js.html',
+        options
     )
 
 
@@ -67,8 +76,21 @@ def bootstrap_calendar_init(*args, **kwargs):
         options["view"] = 'month'
 
     try:
+        options["language"] = kwargs["language"]
+    except KeyError:
+        options["language"] = 'en'
+
+    try:
         options["first_day"] = kwargs["first_day"]
     except KeyError:
         options["first_day"] = 1
 
     return render_to_string('partial/calendar_init.html', options)
+
+
+@register.tag
+def minifyjs(parser, token):
+    nodelist = parser.parse(('endminifyjs',))
+    parser.delete_first_token()
+    return MinifyJs(nodelist)
+
