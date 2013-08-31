@@ -1,4 +1,5 @@
 [class*="cal-cell"] {
+  font-family: Lato;
   float: left;
   margin-left: 0;
   min-height: 1px;
@@ -129,6 +130,12 @@
   display: block;
   width: 100%;
 }
+.cal-month-day-slash {
+
+  background-image: url(http://www.teatrstary.eu/media/images/slash_inverse.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 #cal-week-box {
   position: absolute;
   width: 50px;
@@ -196,21 +203,29 @@
   left: 92.85714285714285%;
 }
 .events-list {
+    font-family: Lato;
+    line-height: 14px;
   position: absolute;
-  top: 40px;
+  top: 10px;
+  min-width: 100%;
   padding-left: 0px;
+  z-index: 1;
 }
 .event {
-    font-size: 10px;
-    text-align: left;
+    font-size: 11px;
+    text-align: right;
+    border-bottom:dotted #747373 1px;
     border-radius: 1px;
-    color: white;
+    #color: #747373;
+    color: #000;
+    background-color: none;
     font-weight: bold;
     text-overflow: hidden;
     display: block;
-    background-color: #c6c3c3;
     width: 100%;
-    padding: 2px;
+    z-index: 1;
+    padding-right: 2px;
+
 }
 a:hover {
     text-decoration: none;
@@ -333,8 +348,9 @@ span[data-cal-date] {
   -moz-transition: all 0.1s ease-in-out;
   -ms-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
-  margin-top: 15px;
-  margin-right: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+  z-index: 1;
 }
 span[data-cal-date]:hover {
   opacity: 1;
