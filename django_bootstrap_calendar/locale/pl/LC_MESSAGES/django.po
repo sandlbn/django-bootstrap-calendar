@@ -67,18 +67,18 @@ msgstr "Startowa data"
 msgid "End Date"
 msgstr "Końcowa Data"
 
-#: templates/partial/calendar_controls.html:5
+#: templates/django_bootstrap_calendar/partial/calendar_controls.html:5
 msgid "Prev"
 msgstr "Wcześniej"
 
-#: templates/partial/calendar_controls.html:7
+#: templates/django_bootstrap_calendar/partial/calendar_controls.html:7
 msgid "Next"
 msgstr "Dalej"
 
-#: templates/partial/calendar_controls.html:10
+#: templates/django_bootstrap_calendar/partial/calendar_controls.html:10
 msgid "Year"
 msgstr "Rok"
 
-#: templates/partial/calendar_controls.html:11
+#: templates/django_bootstrap_calendar/partial/calendar_controls.html:11
 msgid "Month"
 msgstr "Miesiąc"
