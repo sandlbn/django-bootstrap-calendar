@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
-__author__ = 'sandlbn'
+__author__ = 'sandlbn and w3lly'
 
 from django.views.generic import ListView, TemplateView
 from models import CalendarEvent
 from serializers import event_serializer
 from utils import timestamp_to_datetime
+
+import datetime
 
 
 class CalendarJsonListView(ListView):
@@ -16,11 +18,18 @@ class CalendarJsonListView(ListView):
         from_date = self.request.GET.get('from', False)
         to_date = self.request.GET.get('to', False)
 
-        if from_date:
+        if from_date and to_date:
+            queryset = queryset.filter(
+                start__range=(
+                    timestamp_to_datetime(from_date) + datetime.timedelta(-30),
+                    timestamp_to_datetime(to_date)
+                    )
+            )
+        elif from_date:
             queryset = queryset.filter(
                 start__gte=timestamp_to_datetime(from_date)
             )
-        if to_date:
+        elif to_date:
             queryset = queryset.filter(
                 end__lte=timestamp_to_datetime(to_date)
             )
