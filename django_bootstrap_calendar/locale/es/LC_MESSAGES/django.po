@@ -24,7 +24,7 @@ msgstr ""
 
 #: models.py:15
 msgid "Warning"
-msgstr ""
+msgstr "Atención"
 
 #: models.py:16
 msgid "Info"
@@ -32,23 +32,23 @@ msgstr ""
 
 #: models.py:17
 msgid "Success"
-msgstr ""
+msgstr "Éxito"
 
 #: models.py:18
 msgid "Inverse"
-msgstr ""
+msgstr "Inverso"
 
 #: models.py:19
 msgid "Special"
-msgstr ""
+msgstr "Especial"
 
 #: models.py:20
 msgid "Important"
-msgstr ""
+msgstr "Importante"
 
 #: models.py:22
 msgid "Title"
-msgstr ""
+msgstr "Título"
 
 #: models.py:23
 msgid "URL"
@@ -60,24 +60,24 @@ msgstr ""
 
 #: models.py:25
 msgid "Start Date"
-msgstr ""
+msgstr "Fecha inicial"
 
 #: models.py:26
 msgid "End Date"
-msgstr ""
+msgstr "Fecha final"
 
 #: templates/django_bootstrap_calendar/partial/calendar_controls.html:5
 msgid "Prev"
-msgstr ""
+msgstr "Anterior"
 
 #: templates/django_bootstrap_calendar/partial/calendar_controls.html:7
 msgid "Next"
-msgstr ""
+msgstr "Siguiente"
 
 #: templates/django_bootstrap_calendar/partial/calendar_controls.html:10
 msgid "Year"
-msgstr ""
+msgstr "Año"
 
 #: templates/django_bootstrap_calendar/partial/calendar_controls.html:11
 msgid "Month"
-msgstr ""
+msgstr "Mes"
