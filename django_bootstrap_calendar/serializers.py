@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = 'sandlbn'
 
-from django.utils import simplejson
+import json
 from django.db.models.query import QuerySet
 
 
@@ -25,4 +25,4 @@ def event_serializer(events):
 
     objects_head = {"success": 1}
     objects_head["result"] = objects_body
-    return simplejson.dumps(objects_head, encoding='utf-8')
+    return json.dumps(objects_head)
