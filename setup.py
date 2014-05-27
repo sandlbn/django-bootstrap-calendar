@@ -35,6 +35,7 @@ setup(
     ],
     include_package_data=True,
     install_requires=[
+        'jsmin',
     ],
     license="BSD",
     zip_safe=False,
