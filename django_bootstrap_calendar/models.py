@@ -20,10 +20,12 @@ class CalendarEvent(models.Model):
         ('event-important', _('Important')),
     )
     title = models.CharField(max_length=255, verbose_name=_('Title'))
-    url = models.URLField(verbose_name=_('URL'))
-    css_class = models.CharField(max_length=20, verbose_name=_('CSS Class'))
+    url = models.URLField(verbose_name=_('URL'), null=True, blank=True)
+    css_class = models.CharField(max_length=20, verbose_name=_('CSS Class'),
+                                 choices=CSS_CLASS_CHOICES)
     start = models.DateTimeField(verbose_name=_('Start Date'))
-    end = models.DateTimeField(verbose_name=_('End Date'), blank=True)
+    end = models.DateTimeField(verbose_name=_('End Date'), null=True,
+                               blank=True)
 
     @property
     def start_timestamp(self):
