@@ -85,6 +85,11 @@ def bootstrap_calendar_init(*args, **kwargs):
     except KeyError:
         options["first_day"] = 1
 
+    try:
+        options["width"] = kwargs["width"]
+    except KeyError:
+        options["width"] = '100%'
+
     return render_to_string('django_bootstrap_calendar/partial/calendar_init.html', options)
 
 
