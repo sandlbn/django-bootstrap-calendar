@@ -1,19 +1,17 @@
 if(!window.calendar_languages) {
 	window.calendar_languages = {};
 }
-window.calendar_languages['es-ES'] = {
-	error_noview:     'Calendario: Vista {0} no encontrada',
-	error_dateformat: 'Calendario: Formato de fecha inválido {0}. Debe ser "now" o "yyyy-mm-dd"',
-	error_loadurl:    'Calendario: URL de carga de eventos no configurada',
-	error_where:      'Calendario: Dirección de navegación incorrecta {0}. Los valores correctos son "next" o "prev" o "today"',
+window.calendar_languages['es-MX'] = {
+	error_noview:     'Calendar: Vista {0} no encontrada',
+	error_dateformat: 'Calendar: Formato de Fecha Inválido {0}. Debe ser "now" o con el formato "yyyy-mm-dd"',
+	error_loadurl:    'Calendar: URL de datos no definida',
+	error_where:      'Calendar: Direcciónd de navegación errónea {0}. Valores válidos: "next" o "prev" o "today"',
 	error_timedevide: 'Calendario: parámetro para el separador de hora debe dividir 60 por un entero. Por ejemplo 10, 15, 30',
 
-	no_events_in_day: 'No hay eventos hoy',
-
 	title_year:  'Año {0}',
-	title_month: '{0} {1}',
-	title_week:  'Semana {0} del {1}',
-	title_day:   '{0} {1} {2} {3}',
+	title_month: '{0} año {1}',
+	title_week:  '{0} semana del año {1}',
+	title_day:   '{0} {1} {2} año {3}',
 
 	week:        'Semana {0}',
 	all_day:     'Todo el día',
@@ -21,6 +19,7 @@ window.calendar_languages['es-ES'] = {
 	events:      'Desarrollos',
 	before_time: 'Tiempo antes de la cinta final',
 	after_time:  'Fin después de una cinta temporal',
+
 
 	m0:  'Enero',
 	m1:  'Febrero',
@@ -62,19 +61,13 @@ window.calendar_languages['es-ES'] = {
 	first_day: 1,
 
 	holidays: {
-		'01-01':    "Año Nuevo",
-		'06-01':    "Día de Reyes",
-		'19-03':    "San José",
-		'easter-3': "Jueves Santo",
-		'easter-2': "Viernes Santo",
-		'easter':   "Pascua",
-		'easter+1': "Lunes de Pascua",
-		'01-05':    "Día del Trabajador",
-		'15-08':    "Asunción",
-		'12-10':    "Fiesta Nacional de España",
-		'01-11':    "Día de todos los Santos",
-		'06-12':    "Día de la Constitución",
-		'08-12':    "Inmaculada Concepción",
-		'25-12':    "Navidad"
+		'01-01': "Año Nuevo",
+		'05-02': "Día de la Constitución",
+		'21-03': "Natalicio de Benito Juárez",
+		'01-05': "Día del Trabajo",
+		'16-09': "Día de la Independencia",
+		'20-11': "Día de la Revolución",
+		'01-12': "Transmisión del Poder Ejecutivo Federal",
+		'25-12': "Navidad"
 	}
 };

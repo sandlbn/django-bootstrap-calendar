@@ -1,16 +1,16 @@
-{% load bootstrap_calendar %}{% autoescape off %}{% minifyjs %}
+{% load bootstrap_calendar %}{% load static %}{% autoescape off %}{% minifyjs %}
 <script>
 (function($) {
 
     "use strict";
     var options = {
-
-    events_url: '{{ events_url }}',
+    events_source: '{{ events_url }}',
     view: '{{ view }}',
     language: '{{ language }}',
-	tmpl_path: '/static/tmpls/',
+    tmpl_path: '{% get_static_prefix %}tmpls/',
+    tmpl_cache: false,
     first_day: {{ first_day }},
-	onAfterEventsLoad: function(events) {
+       onAfterEventsLoad: function(events) {
 	if(!events) {
 		return;
         }

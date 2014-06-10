@@ -6,14 +6,14 @@ if(!window.calendar_languages) {
 // Here you define the language and Country code. Replace en-US with your own.
 // First letters: the language code (lower case). See http://www.loc.gov/standards/iso639-2/php/code_list.php
 // Last letters: the Country code (upper case). See http://www.iso.org/iso/home/standards/country_codes/country_names_and_code_elements.htm
-window.calendar_languages['en-US'] = {
-	error_noview: 'Calendar: View {0} not found',
-	error_dateformat: 'Calendar: Wrong date format {0}. Should be either "now" or "yyyy-mm-dd"',
-	error_loadurl: 'Calendar: Event URL is not set',
-	error_where: 'Calendar: Wrong navigation direction {0}. Can be only "next" or "prev" or "today"',
-	error_timedevide: 'Calendar: Time split parameter should divide 60 without decimals. Something like 10, 15, 30',
+window.calendar_languages['sl-SL'] = {
+	error_noview: 'Koledar: Ne najdem pogleda {0}',
+	error_dateformat: 'Koledar: Napačna oblika datuma {0}. Mora biti bodisi "now" ali "yyyy-mm-dd"',
+	error_loadurl: 'Koledar: URL dogodek ni nastavljen',
+	error_where: 'Koledar: Napačna smer navigacije {0}. Lahko je le "next", "prev" ali "today"',
+	error_timedevide: 'Koledar: Time split parameter should divide 60 without decimals. Something like 10, 15, 30',
 
-	no_events_in_day: 'No events in this day.',
+	no_events_in_day: 'V tem dnevu ni dogodkov.',
 
 	// {0} will be replaced with the year (example: 2013)
 	title_year: '{0}',
@@ -22,30 +22,30 @@ window.calendar_languages['en-US'] = {
 	title_month: '{0} {1}',
 	// {0} will be replaced with the week number (example: 37)
 	// {1} will be replaced with the year (example: 2013)
-	title_week: 'week {0} of {1}',
+	title_week: 'teden {0} v letu {1}',
 	// {0} will be replaced with the weekday name (example: Thursday)
 	// {1} will be replaced with the day of the month (example: 12)
 	// {2} will be replaced with the month name (example: September)
 	// {3} will be replaced with the year (example: 2013)
 	title_day: '{0} {1} {2}, {3}',
 
-	week:'Week {0}',
-	all_day:     'All day',
-	time:        'Time',
-	events:      'Events',
+	week:'Teden {0}',
+	all_day:     'Cel dan',
+	time:        'Čas',
+	events:      'Dogodki',
 	before_time: 'Ends before timeline',
 	after_time:  'Starts after timeline',
 
-	m0: 'January',
-	m1: 'February',
-	m2: 'March',
+	m0: 'Januar',
+	m1: 'Februar',
+	m2: 'Marec',
 	m3: 'April',
-	m4: 'May',
-	m5: 'June',
-	m6: 'July',
-	m7: 'August',
+	m4: 'Maj',
+	m5: 'Junij',
+	m6: 'Julij',
+	m7: 'Avgust',
 	m8: 'September',
-	m9: 'October',
+	m9: 'Oktober',
 	m10: 'November',
 	m11: 'December',
 
@@ -53,25 +53,25 @@ window.calendar_languages['en-US'] = {
 	ms1: 'Feb',
 	ms2: 'Mar',
 	ms3: 'Apr',
-	ms4: 'May',
+	ms4: 'Maj',
 	ms5: 'Jun',
 	ms6: 'Jul',
-	ms7: 'Aug',
+	ms7: 'Avg',
 	ms8: 'Sep',
-	ms9: 'Oct',
+	ms9: 'Okt',
 	ms10: 'Nov',
 	ms11: 'Dec',
 
-	d0: 'Sunday',
-	d1: 'Monday',
-	d2: 'Tuesday',
-	d3: 'Wednesday',
-	d4: 'Thursday',
-	d5: 'Friday',
-	d6: 'Saturday',
+	d0: 'Nedelja',
+	d1: 'Ponedeljek',
+	d2: 'Torek',
+	d3: 'Sreda',
+	d4: 'Četrtek',
+	d5: 'Petek',
+	d6: 'Sobota',
 
 	// Which is the first day of the week (2 for sunday, 1 for monday)
-	first_day: 2,
+	first_day: 1,
 
 	// The list of the holidays.
 	// Each holiday has a date definition and a name (in your language)
