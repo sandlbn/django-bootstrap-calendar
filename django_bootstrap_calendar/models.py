@@ -30,7 +30,7 @@ class CalendarEvent(models.Model):
     @property
     def start_timestamp(self):
         """
-        Return end date as timestamp
+        Return start date as timestamp
         """
         return datetime_to_timestamp(self.start)
 
